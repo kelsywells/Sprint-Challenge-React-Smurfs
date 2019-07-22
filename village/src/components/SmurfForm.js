@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class SmurfForm extends Component {
   constructor(props) {
     super(props);
@@ -10,9 +11,10 @@ class SmurfForm extends Component {
     };
   }
 
+//On submit click: new data appears in console. On refresh: new data in console appears on screen. Question mark?
   addSmurf = event => {
     event.preventDefault();
-    // add code to create the smurf using the api
+    this.props.addSmurf(this.state)
 
     this.setState({
       name: '',
@@ -20,6 +22,8 @@ class SmurfForm extends Component {
       height: ''
     });
   }
+
+ 
 
   handleInputChange = e => {
     this.setState({ [e.target.name]: e.target.value });
