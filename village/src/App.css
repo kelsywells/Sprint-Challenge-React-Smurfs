@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+
+.NavForm {
+  font-size: 16px;
+  border: 4px dashed blueviolet;
+  color: green;
+  padding: 5px 30px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.NavData {
+  font-size: 16px;
+  border: 4px dashed blueviolet;
+  color: green;
+  padding: 5px 30px;
+  margin: 30px;
+  font-weight: bold;
+}
